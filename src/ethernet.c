@@ -29,7 +29,7 @@ void ethernet_out(buf_t *buf, const uint8_t *mac, net_protocol_t protocol)
  */
 void ethernet_init()
 {
-    // TO-DO
+    buf_init(&rxbuf, ETHERNET_MAX_TRANSPORT_UNIT + sizeof(ether_hdr_t));
 }
 
 /**
