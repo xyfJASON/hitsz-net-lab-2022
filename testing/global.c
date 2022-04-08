@@ -53,7 +53,7 @@ extern map_t arp_buf;
 
 FILE* open_file(char * path, char * name, char * mode) {
         char filename[128];
-        sprintf(filename, "%s\\%s", path, name);
+        sprintf(filename, "%s/%s", path, name);
         // printf("opening: %s\n", filename);
         return fopen(filename, mode);
 }
